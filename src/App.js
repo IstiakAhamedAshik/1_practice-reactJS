@@ -8,7 +8,7 @@ import Nav from './COMPONENTS/Nav'
 function App() {
   return (
     <div>
-      <div style={{ backgroundColor: 'cadetblue' }}>
+      <div className='nave' style={{ backgroundColor: 'cadetblue' }}>
         <Nav></Nav>
       </div>
 
