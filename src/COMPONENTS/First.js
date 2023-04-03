@@ -7,7 +7,7 @@ const First = () => {
   const [input, setInput] = useState('')
 
   const increase = () => {
-    if (count < 20) {
+    if (count < 30) {
       let newcount = count + 1
       setCount(newcount)
     }

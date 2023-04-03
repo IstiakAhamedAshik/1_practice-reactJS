@@ -1,23 +1,38 @@
-import { Route, Routes } from 'react-router-dom'
 import Home from './COMPONENTS/Home'
 import First from './COMPONENTS/First'
 import From from './COMPONENTS/From'
 import Toggle from './COMPONENTS/Toggle'
-import Nav from './COMPONENTS/Nav'
+import Header from './COMPONENTS/Header'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Header></Header>,
+      children: [
+        {
+          path: '/',
+          element: <First></First>,
+        },
+        {
+          path: '/home',
+          element: <Home></Home>,
+        },
+        {
+          path: '/form',
+          element: <From></From>,
+        },
+        {
+          path: '/toggle',
+          element: <Toggle></Toggle>,
+        },
+      ],
+    },
+  ])
   return (
     <div>
-      <div className='nave' style={{ backgroundColor: 'cadetblue' }}>
-        <Nav></Nav>
-      </div>
-
-      <Routes>
-        <Route path='/' element={<First />}></Route>
-        <Route path='/home' element={<Home />}></Route>
-        <Route path='/form' element={<From />}></Route>
-        <Route path='/toggle' element={<Toggle />}></Route>
-      </Routes>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   )
 }
