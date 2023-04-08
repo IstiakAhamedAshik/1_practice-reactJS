@@ -6,9 +6,10 @@ const Friend = (props) => {
   return (
     <div style={{ margin: '20px', padding: '10px', border: '1px solid black' }}>
       <h3>Name:{name}</h3>
-      <button>
-        <Link to={`/friend/${id}`}>{username}</Link>
-      </button>
+
+      <Link to={`/friend/${id}`}>
+        <button>{username}</button>
+      </Link>
     </div>
   )
 }

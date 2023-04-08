@@ -26,9 +26,7 @@ const Home = () => {
           <Todo key={index} todo={todo}></Todo>
         ))}
       </div>
-      <div
-        style={{ margin: '20px', padding: '10px', border: '1px solid black' }}
-      >
+      <div>
         <h3>Load data : {friends.length}</h3>
         {friends.map((friend) => (
           <Friend key={friend.id} friend={friend}></Friend>

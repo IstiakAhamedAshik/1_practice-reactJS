@@ -1,0 +1,17 @@
+.root {
+  margin: 30px;
+  border: 1.5px solid gold;
+  padding: 12px;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+.children {
+  display: flex;
+}
+.children1 {
+  margin-left: 10px;
+  border: 1.5px solid gold;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}

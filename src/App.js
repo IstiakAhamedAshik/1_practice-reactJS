@@ -1,6 +1,6 @@
 import Home from './COMPONENTS/Home'
 import First from './COMPONENTS/First'
-import From from './COMPONENTS/From'
+import From from './COMPONENTS/form/From'
 import Toggle from './COMPONENTS/Toggle'
 import Header from './COMPONENTS/Header'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
